@@ -1,0 +1,231 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny10-TS U1
+U 1 1 5F4F86D1
+P 3150 2500
+F 0 "U1" H 2750 3050 50  0000 R CNN
+F 1 "ATtiny10-TS" H 3650 1950 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 3150 2500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 3150 2500 50  0001 C CNN
+	1    3150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F4F8E70
+P 3150 3100
+F 0 "#PWR0101" H 3150 2850 50  0001 C CNN
+F 1 "GND" H 3155 2927 50  0000 C CNN
+F 2 "" H 3150 3100 50  0001 C CNN
+F 3 "" H 3150 3100 50  0001 C CNN
+	1    3150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F4F8F9B
+P 2250 2050
+F 0 "C1" H 2365 2096 50  0000 L CNN
+F 1 "0.1u" H 2365 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 1900 50  0001 C CNN
+F 3 "~" H 2250 2050 50  0001 C CNN
+	1    2250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F4F926D
+P 2250 2200
+F 0 "#PWR0102" H 2250 1950 50  0001 C CNN
+F 1 "GND" H 2255 2027 50  0000 C CNN
+F 2 "" H 2250 2200 50  0001 C CNN
+F 3 "" H 2250 2200 50  0001 C CNN
+	1    2250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1900 3150 1900
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5F4F9733
+P 5250 2400
+F 0 "J1" H 5300 2717 50  0000 C CNN
+F 1 "TPI" H 5300 2626 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 5250 2400 50  0001 C CNN
+F 3 "~" H 5250 2400 50  0001 C CNN
+	1    5250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 5F4F9FC9
+P 4200 2500
+F 0 "JP1" H 4200 2673 50  0000 C CNN
+F 1 "Jumper" H 4200 2673 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 2500 50  0001 C CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Text Label 5050 2300 2    50   ~ 0
+DATA
+Text Label 5050 2400 2    50   ~ 0
+CLOCK
+Text Label 5050 2500 2    50   ~ 0
+~RESET
+Text Label 5700 2300 0    50   ~ 0
+VCC
+$Comp
+L power:GND #PWR0103
+U 1 1 5F4FAFC9
+P 5550 2550
+F 0 "#PWR0103" H 5550 2300 50  0001 C CNN
+F 1 "GND" H 5555 2377 50  0000 C CNN
+F 2 "" H 5550 2550 50  0001 C CNN
+F 3 "" H 5550 2550 50  0001 C CNN
+	1    5550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2550 5550 2500
+NoConn ~ 5550 2400
+Text Label 3150 1900 0    50   ~ 0
+VCC
+Wire Wire Line
+	3750 2500 3900 2500
+Wire Wire Line
+	4500 2500 5050 2500
+Text Label 3750 2200 0    50   ~ 0
+DATA
+Text Label 3750 2300 0    50   ~ 0
+CLOCK
+NoConn ~ 3750 2400
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F4FEC55
+P 4100 3100
+F 0 "H1" H 4200 3103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4200 3058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4100 3100 50  0001 C CNN
+F 3 "~" H 4100 3100 50  0001 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F4FF462
+P 4100 3200
+F 0 "#PWR0104" H 4100 2950 50  0001 C CNN
+F 1 "GND" H 4105 3027 50  0000 C CNN
+F 2 "" H 4100 3200 50  0001 C CNN
+F 3 "" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F5002AD
+P 4450 3100
+F 0 "H2" H 4550 3103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4550 3058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4450 3100 50  0001 C CNN
+F 3 "~" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F5002B7
+P 4450 3200
+F 0 "#PWR0105" H 4450 2950 50  0001 C CNN
+F 1 "GND" H 4455 3027 50  0000 C CNN
+F 2 "" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F501668
+P 4800 3100
+F 0 "H3" H 4900 3103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4900 3058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 4800 3100 50  0001 C CNN
+F 3 "~" H 4800 3100 50  0001 C CNN
+	1    4800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F501672
+P 4800 3200
+F 0 "#PWR0106" H 4800 2950 50  0001 C CNN
+F 1 "GND" H 4805 3027 50  0000 C CNN
+F 2 "" H 4800 3200 50  0001 C CNN
+F 3 "" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F50167C
+P 5150 3100
+F 0 "H4" H 5250 3103 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5250 3058 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 5150 3100 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F501686
+P 5150 3200
+F 0 "#PWR0107" H 5150 2950 50  0001 C CNN
+F 1 "GND" H 5155 3027 50  0000 C CNN
+F 2 "" H 5150 3200 50  0001 C CNN
+F 3 "" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5F50B119
+P 6150 2300
+F 0 "J2" H 6122 2228 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6122 2183 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 2300 50  0001 C CNN
+F 3 "~" H 6150 2300 50  0001 C CNN
+	1    6150 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2300 5950 2300
+$Comp
+L power:GND #PWR0108
+U 1 1 5F50C6CA
+P 5950 2550
+F 0 "#PWR0108" H 5950 2300 50  0001 C CNN
+F 1 "GND" H 5955 2377 50  0000 C CNN
+F 2 "" H 5950 2550 50  0001 C CNN
+F 3 "" H 5950 2550 50  0001 C CNN
+	1    5950 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2400 5950 2550
+$EndSCHEMATC
