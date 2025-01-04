@@ -76,6 +76,6 @@ void timer_start(void)
 
 void timer_stop_and_reset(void)
 {
-    TCCR0B |= (0 << CS02) | (0 << CS00);
+    TCCR0B &= ~((1 << CS02) | (1 << CS00));
     timer_seconds = 0;
 }
